@@ -1,0 +1,40 @@
+/* 1. Reset & Setup Layar */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Geser konten ke tengah horizontal */
+  align-items: center;     /* Geser konten ke tengah vertikal */
+  background-color: #1a1a1a; /* Background layar gelap */
+  font-family: monospace;
+
+  background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.7)),
+  url("/home/unarch/Documents/Darkweb/1292433.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 2. Styling Kartu Utama */
+.card {
+  background-color: rgba (38,38,38, 0.75);
+  backdrop-filter: blur(10px);
+  width: 280px;
+  padding: 24px;
+  border-radius: 16px; /* Bikin sudut melengkung */
+  text-align: center;  /* Semua teks di dalamnya rata tengah */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); /* Efek bayangan */
+  color: #ffffff;
+  border: 3px 50% #2279ea;
+}
+
+/* 3. Styling foto tengah (avatar) */
+.avatar {
+    width  : 96px;
+    height : 96px;
+    border-radius : 10%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #1a1a1a;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
